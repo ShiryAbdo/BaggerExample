@@ -2,24 +2,26 @@ package com.shimaa.baggerexample;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.widget.TextView;
 
 import com.daimajia.slider.library.SliderTypes.BaseSliderView;
 import com.daimajia.slider.library.SliderTypes.TextSliderView;
 
 import java.util.HashMap;
 
-public class MainActivity extends AppCompatActivity implements BaseSliderView.OnSliderClickListener {
-    SliderLayout mDemoSlider;
+import butterknife.BindView;
+import butterknife.ButterKnife;
 
+public class MainActivity extends AppCompatActivity implements BaseSliderView.OnSliderClickListener {
+
+@BindView(R.id.EXPLOREMORE)TextView EXPLOREMORE ;
+@BindView((R.id.slider))  SliderLayout mDemoSlider ;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-
-//        ********Slider*********
-
-        mDemoSlider = (SliderLayout)findViewById(R.id.slider);
+        ButterKnife.bind(this);
+           EXPLOREMORE.setText(R.string.EXPLORE_MORE);
 
         HashMap<String,Integer> file_maps = new HashMap<String, Integer>();
         file_maps.put("1", R.drawable.slide1);
@@ -52,6 +54,7 @@ public class MainActivity extends AppCompatActivity implements BaseSliderView.On
 
     @Override
     public void onSliderClick(BaseSliderView slider) {
+
 
     }
 }
