@@ -1,0 +1,21 @@
+
+  [
+  {
+    "albumId": 1,
+    "id": 1,
+    "title": "accusamus beatae ad facilis cum similique qui sunt",
+    "url": "https://github.com/ShiryAbdo/BaggerExample/blob/master/slide1.jpg"
+   },
+  {
+    "albumId": 1,
+    "id": 2,
+    "title": "reprehenderit est deserunt velit ipsam",
+    "url": "https://github.com/ShiryAbdo/BaggerExample/blob/master/slide2.jpg"
+   },
+  {
+    "albumId": 1,
+    "id": 3,
+    "title": "officia porro iure quia iusto qui ipsa ut modi",
+    "url": "https://github.com/ShiryAbdo/BaggerExample/blob/master/slide3.jpg"
+   }
+  ]
